@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find your next obsession. Explore the latest PC, console, and indie games on Nexus Play."
+    />
+    <meta name="theme-color" content="#0a0a0f" />
+    <title>Nexus Play — Find your next obsession</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#" aria-label="Nexus Play home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>NEXUS<span class="brand-accent">PLAY</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link is-active" href="#discover">Discover</a>
+          <a class="nav-link" href="#games">Games</a>
+          <a class="nav-link" href="#categories">Categories</a>
+          <a class="nav-link" href="#community">Community</a>
+        </nav>
+
+        <div class="header-actions">
+          <form class="search-box" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 4 4"></path></svg>
+            <input type="search" placeholder="Search games..." aria-label="Search games" />
+            <kbd>/</kbd>
+          </form>
+          <button class="icon-button notification-button" type="button" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path><path d="M10 21h4"></path></svg>
+            <span class="notification-dot"></span>
+          </button>
+          <button class="profile-button" type="button" aria-label="Open profile">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&h=96&q=80" alt="" />
+            <span class="online-indicator"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="discover" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-pulse"></span> YOUR NEXT ADVENTURE STARTS HERE</div>
+          <h1 id="hero-title">PLAY<br />WITHOUT<br /><span>LIMITS.</span></h1>
+          <p class="hero-description">The worlds you love. The ones you haven't found yet. All in one place.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#games">
+              Explore games
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+            </a>
+            <a class="button button-quiet" href="#categories"><span class="play-icon">▶</span> Browse categories</a>
+          </div>
+          <div class="community-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=64&h=64&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=64&h=64&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64&q=80" alt="" />
+              <span>+</span>
+            </div>
+            <p><strong>2.4M+</strong> players found their game</p>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Featured game, Eclipse: Fallen Kingdom">
+          <div class="hero-image"></div>
+          <div class="hero-shade"></div>
+          <div class="hero-topline"><span class="featured-label"><span></span> EDITOR'S PICK</span><span class="hero-index">01 <i>/</i> 04</span></div>
+          <div class="hero-game-info">
+            <div class="game-tags"><span>OPEN WORLD</span><span>RPG</span></div>
+            <h2>ECLIPSE: <span>FALLEN KINGDOM</span></h2>
+            <p>When the sun goes dark, legends rise.</p>
+            <div class="hero-meta">
+              <span class="rating"><span>★</span> 9.4 <small>/ 10</small></span>
+              <span class="meta-divider"></span>
+              <span>PC · PS5 · XBOX</span>
+              <a href="#games" class="hero-arrow" aria-label="Explore Eclipse: Fallen Kingdom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></a>
+            </div>
+          </div>
+          <div class="hero-pagination" aria-hidden="true"><span class="current"></span><span></span><span></span><span></span></div>
+          <span class="art-decoration" aria-hidden="true">N° 001 — FEATURED</span>
+        </div>
+      </section>
+
+      <section class="category-section section-shell" id="categories" aria-labelledby="category-title">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">PICK YOUR PLAYSTYLE</span>
+            <h2 id="category-title">Explore <span>categories</span></h2>
+          </div>
+          <a class="text-link" href="#games">All categories <span>↗</span></a>
+        </div>
+        <div class="category-grid">
+          <a href="#games" class="category-card category-action" data-filter="Action" style="--category-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=85')">
+            <span class="category-number">01</span><span class="category-icon">⚡</span><span class="category-name">Action</span><span class="category-count">128 GAMES</span>
+          </a>
+          <a href="#games" class="category-card category-rpg" data-filter="RPG" style="--category-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=85')">
+            <span class="category-number">02</span><span class="category-icon">✧</span><span class="category-name">RPG</span><span class="category-count">94 GAMES</span>
+          </a>
+          <a href="#games" class="category-card category-strategy" data-filter="Strategy" style="--category-image: url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=85')">
+            <span class="category-number">03</span><span class="category-icon">◈</span><span class="category-name">Strategy</span><span class="category-count">76 GAMES</span>
+          </a>
+          <a href="#games" class="category-card category-indie" data-filter="Indie" style="--category-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=85')">
+            <span class="category-number">04</span><span class="category-icon">✳</span><span class="category-name">Indie</span><span class="category-count">213 GAMES</span>
+          </a>
+          <a href="#games" class="category-card category-sports" data-filter="Sports" style="--category-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=85')">
+            <span class="category-number">05</span><span class="category-icon">◎</span><span class="category-name">Sports</span><span class="category-count">51 GAMES</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="games-section section-shell" id="games" aria-labelledby="games-title">
+        <div class="section-heading games-heading">
+          <div>
+            <span class="section-kicker">THE COMMUNITY HAS SPOKEN</span>
+            <h2 id="games-title">Popular <span>right now</span></h2>
+          </div>
+          <div class="game-controls">
+            <div class="filter-tabs" role="group" aria-label="Filter popular games">
+              <button class="filter-tab is-selected" type="button" data-filter="All">All games</button>
+              <button class="filter-tab" type="button" data-filter="Action">Action</button>
+              <button class="filter-tab" type="button" data-filter="RPG">RPG</button>
+              <button class="filter-tab" type="button" data-filter="Indie">Indie</button>
+            </div>
+            <button class="carousel-button" type="button" aria-label="Show all games" title="Show all games">↗</button>
+          </div>
+        </div>
+        <div class="games-grid">
+          <article class="game-card" data-category="Action">
+            <a class="game-cover cover-neon" href="#community" aria-label="View Cyberstrike game">
+              <img src="https://images.unsplash.com/photo-1603481546238-487240415921?auto=format&fit=crop&w=900&h=1100&q=85" alt="Neon-lit futuristic cityscape" loading="lazy" />
+              <span class="game-badge badge-hot">TRENDING</span><span class="cover-number">01 / 04</span>
+              <span class="cover-overlay"><span class="cover-play">▶</span></span>
+            </a>
+            <div class="game-info"><div><h3>CYBERSTRIKE</h3><span class="game-genre">ACTION · FPS</span></div><span class="game-rating">★ 9.2</span></div>
+            <div class="game-footer"><span><i class="player-dot"></i> 24.8k playing</span><span class="platforms">PC&nbsp; · &nbsp;PS5</span></div>
+          </article>
+          <article class="game-card" data-category="RPG">
+            <a class="game-cover cover-wild" href="#community" aria-label="View Wildlands game">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&h=1100&q=85" alt="Mountain valley beneath dramatic clouds" loading="lazy" />
+              <span class="game-badge badge-new">NEW SEASON</span><span class="cover-number">02 / 04</span>
+              <span class="cover-overlay"><span class="cover-play">▶</span></span>
+            </a>
+            <div class="game-info"><div><h3>WILDLANDS</h3><span class="game-genre">OPEN WORLD · RPG</span></div><span class="game-rating">★ 9.6</span></div>
+            <div class="game-footer"><span><i class="player-dot"></i> 18.2k playing</span><span class="platforms">PC&nbsp; · &nbsp;XBOX</span></div>
+          </article>
+          <article class="game-card" data-category="Indie">
+            <a class="game-cover cover-lastlight" href="#community" aria-label="View Last Light game">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&h=1100&q=85" alt="Snow-covered mountains under a starry sky" loading="lazy" />
+              <span class="game-badge badge-indie">INDIE GEM</span><span class="cover-number">03 / 04</span>
+              <span class="cover-overlay"><span class="cover-play">▶</span></span>
+            </a>
+            <div class="game-info"><div><h3>LAST LIGHT</h3><span class="game-genre">ADVENTURE · INDIE</span></div><span class="game-rating">★ 9.0</span></div>
+            <div class="game-footer"><span><i class="player-dot"></i> 8.6k playing</span><span class="platforms">PC&nbsp; · &nbsp;SWITCH</span></div>
+          </article>
+          <article class="game-card" data-category="Action">
+            <a class="game-cover cover-apex" href="#community" aria-label="View Apex Protocol game">
+              <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&h=1100&q=85" alt="Purple twilight over a mountain landscape" loading="lazy" />
+              <span class="game-badge badge-live">LIVE NOW</span><span class="cover-number">04 / 04</span>
+              <span class="cover-overlay"><span class="cover-play">▶</span></span>
+            </a>
+            <div class="game-info"><div><h3>APEX PROTOCOL</h3><span class="game-genre">TACTICAL · ACTION</span></div><span class="game-rating">★ 8.8</span></div>
+            <div class="game-footer"><span><i class="player-dot"></i> 12.1k playing</span><span class="platforms">PC&nbsp; · &nbsp;PS5</span></div>
+          </article>
+        </div>
+        <div class="empty-state" hidden>No games found. Try another search.</div>
+        <a class="button button-outline" href="#discover">Discover all games <span>↗</span></a>
+      </section>
+
+      <section class="community-banner section-shell" id="community">
+        <div class="banner-glow"></div>
+        <div class="banner-content"><span class="section-kicker">MORE THAN JUST A GAME</span><h2>YOUR PEOPLE.<br /><span>YOUR PLAYGROUND.</span></h2><p>Squad up, share your wins, and find players who get it.</p><a class="button button-primary" href="mailto:hello@nexusplay.example">Join the community <span>↗</span></a></div>
+        <div class="banner-stats"><div><strong>2.4M<span>+</span></strong><small>PLAYERS</small></div><div><strong>180<span>K</span></strong><small>DAILY SQUADS</small></div><div><strong>24<span>/7</span></strong><small>GOOD VIBES</small></div></div>
+        <div class="banner-orbit" aria-hidden="true"><span>NP</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="brand" href="#" aria-label="Nexus Play home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>NEXUS<span class="brand-accent">PLAY</span></span></a>
+      <p>Made for the love of the game. <span>© 2025 NEXUS PLAY</span></p>
+      <div class="footer-links"><a href="#community">Discord</a><a href="#community">Instagram</a><a href="#community">Support</a></div>
+    </footer>
+  </body>
+</html>
